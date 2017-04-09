@@ -7,9 +7,20 @@ h1, h2, h3, h4, h5, h6 {
 ul {
   list-style: none;
 }
+
+a {
+  text-decoration: none;
+}
  header {
    background-color: $maincolor;
-    color: white;}
+    color: white;
+
+    a {
+      color: white;
+    }
+
+    border-bottom: solid white 2px;
+  }
 
 .mainnav {
   font-family: $headerfont;

@@ -1,0 +1,189 @@
+.menu-controller-checkbox {
+  display: none; }
+
+.slide-left {
+
+  .menu-controller-checkbox ~ ul { transition: left .5s ease; }
+
+  .menu-controller-checkbox:checked ~ ul { left: 0; }
+
+}
+
+.slide-left { 
+
+  position: relative;
+
+  ul {
+
+    background-color: $maincolor;
+    font-family: $headerfont;
+    font-size: 2.25em;
+    height: 100%;
+    left: -66%;
+    line-height: $line-height * 2;
+    padding: $line-height;
+    position: absolute;
+    top: 0;
+    width: 66%;
+
+    a {
+
+      display: block;
+      margin-bottom: $line-height;
+      width: 100%;
+
+    }
+
+    a:link,
+    a:visited {
+
+      color: white;
+      text-decoration: none;
+
+    }
+
+    a:hover { color: grey; }
+
+    a:active {
+
+      text-decoration: line-through;
+
+    }
+
+    label {
+      color: white;
+      display: block;
+      font-family: 'Helvetica', 'Arial', sans-serif;
+      font-size: $line-height;
+      height: $line-height;
+      line-height: $line-height;
+      position: absolute;
+      right: $line-height / 2;
+      text-align: center;
+      top: $line-height / 2;
+      width: $line-height;
+
+    }
+
+  }
+
+  .menu-controller-label {
+
+    background-color: $maincolor;
+    display: inline-block;
+    font-size: 3rem;
+    padding-top: 25px;
+    line-height: 0;
+
+  }
+
+
+
+}
+
+h1 {
+  float: right;
+  font-size: 3rem;
+  margin-right: $line-height
+}
+
+@include tablet {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .menu-controller-label {
+    padding-top: 40px;
+  }
+}
+
+@include desktop {
+
+  h1 {
+    float: none;
+    margin-left: $line-height;
+    padding-top: $line-height * 1;
+    font-size: 6rem;
+  }
+
+
+  .slide-left {
+
+    .menu-controller-checkbox ~ ul {
+
+      max-height: none;
+      overflow: visible;
+
+    }
+
+    .menu-controller-label {
+
+      display: none;
+      visibility: hidden;
+
+    }
+
+  }
+
+
+
+  .slide-left {
+
+    ul {
+
+      position: relative;
+      background-color: transparent;
+      height: inherit;
+      left: 4rem;
+      line-height: $line-height;
+      font-size: 1.5em;
+      padding: 0;
+      width: 100%;
+      display: inline-block;
+      margin-left: $line-height * 6;
+      margin-bottom: $line-height;
+      align: center;
+
+      li {
+        background-color: transparent;
+        display: inline-block;
+        margin: 0 1rem 0 0;
+        padding: 0;
+        text-align: left;
+
+        a { margin-bottom: 0; }
+
+        a:link,
+        a:visited {
+
+          color: white;
+          text-decoration: none;
+
+        }
+
+        a:hover {
+
+          color: grey;
+          text-decoration: underline;
+
+        }
+
+        a:active {
+          text-decoration: line-through;
+
+        }
+
+      }
+
+      label {
+
+        display: none;
+        visibility: hidden;
+
+      }
+
+    }
+
+  }
+
+}

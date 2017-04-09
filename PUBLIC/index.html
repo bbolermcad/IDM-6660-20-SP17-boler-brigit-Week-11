@@ -5,19 +5,22 @@
 <link rel="stylesheet" type="text/css" href="CSS/css.css">
 </head>
 
-  <body>
-    <header>
+  <body class="slide-left">
+    <header class="clearfix">
+      <label for="menu-controller-checkbox" class="menu-controller-label">&#9776;</label>
       <h1>Link</h1>
       <nav class="mainnav">
+        <input type="checkbox" name="menu-controller-checkbox" id="menu-controller-checkbox" class="menu-controller-checkbox" value="value">
         <ul>
-          <li>Home</li>
-          <li>Bio</li>
-          <li>Resume</li>
-          <li>Contact</li>
+          <label for="menu-controller-checkbox">X</label>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Bio</a></li>
+          <li><a href="#">Resume</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
-    
+
     <section class="banner">
 <h2 class="subtitle">The Legendary Hero Returns</h2>
   </section>
