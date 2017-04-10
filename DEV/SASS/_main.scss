@@ -175,6 +175,8 @@ a {
   h3 {
     color: $maincolor;
   }
+margin-bottom: $line-height;
+
 }
 
 .resumeimg {
@@ -184,4 +186,9 @@ a {
 
 ul li {
   visibility: visible;
+}
+
+.resumecontent {
+  width: 50%;
+  margin: auto;
 }

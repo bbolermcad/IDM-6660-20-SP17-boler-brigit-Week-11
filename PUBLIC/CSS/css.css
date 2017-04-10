@@ -242,7 +242,8 @@ footer p {
   display: block;
   visibility: visible;
   list-style: square;
-  list-style-type: square; }
+  list-style-type: square;
+  margin-bottom: 1.5rem; }
   .resume ul li {
     visibility: visible;
     font-family: "Arial", sans-serif;
@@ -257,5 +258,9 @@ footer p {
 
 ul li {
   visibility: visible; }
+
+.resumecontent {
+  width: 50%;
+  margin: auto; }
 
 /*# sourceMappingURL=css.css.map */
