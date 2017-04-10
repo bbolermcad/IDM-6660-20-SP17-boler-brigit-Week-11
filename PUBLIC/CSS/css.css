@@ -139,6 +139,12 @@ header {
 .mainnav {
   font-family: "Crushed", cursive; }
 
+p {
+  font-family: "Arial", sans-serif;
+  line-height: 1.65rem;
+  font-size: 16px;
+  color: #333333; }
+
 /*front page*/
 .banner {
   background-image: url(../IMG/homebg.jpg);
@@ -146,7 +152,8 @@ header {
   background-size: cover;
   background-position: center;
   min-height: 400px;
-  position: relative; }
+  position: relative;
+  z-index: 100; }
   @media (min-width: 480px) {
     .banner {
       min-height: 600px; } }
@@ -227,5 +234,13 @@ footer p {
   color: #F1CE54;
   font-size: 2.5rem;
   text-align: center; }
+.resume ul {
+  margin: 0; }
+  .resume ul li {
+    visibility: visible;
+    font-family: "Arial", sans-serif;
+    color: #333333;
+    font-size: 16px;
+    display: block; }
 
 /*# sourceMappingURL=css.css.map */

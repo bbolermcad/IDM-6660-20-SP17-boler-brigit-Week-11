@@ -26,6 +26,13 @@ a {
   font-family: $headerfont;
   }
 
+  p {
+    font-family: $bodyfont;
+    line-height: $line-height *1.1;
+
+    font-size: 16px;
+    color: $textcolor;
+  }
 
   /*front page*/
 
@@ -36,6 +43,7 @@ a {
     background-position: center;
     min-height: 400px;
     position: relative;
+    z-index: 100;
 
     @include bigphone {
       min-height: 600px;
@@ -147,4 +155,14 @@ a {
     text-align: center;
   }
 
+  ul {
+    margin: 0;
+    li {
+    visibility: visible;
+    font-family: $bodyfont;
+    color: $textcolor;
+    font-size: 16px;
+    display: block;
+  }
+}
 }
