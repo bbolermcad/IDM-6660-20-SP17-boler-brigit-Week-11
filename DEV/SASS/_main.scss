@@ -26,12 +26,16 @@ a {
   font-family: $headerfont;
   }
 
+
+  /*front page*/
+
   .banner {
     background-image: url(../IMG/homebg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 400px;
+    position: relative;
 
     @include bigphone {
       min-height: 600px;
@@ -44,13 +48,103 @@ a {
     @include desktop {
       min-height: 900px;
     }
+
+
+  h2 {
+    color: white;
+    position: absolute;
+    left: 165px;
+    bottom: 40px;
+    font-size: 2rem;
+
+    @include bigphone {
+      left: 200px;
+      bottom: 100px;
+    }
+
+    @include tablet {
+      left: 400px;
+      bottom: 150px;
+      font-size: 3rem;
+    }
+
+    @include desktop {
+      left: 700px;
+      bottom: 300px;
+      font-size: 4rem;
+    }
+  }
   }
 
+/*footer*/
   footer {
+     p {
     background-color: $maincolor;
     color: white;
     min-height: 100px;
     text-align: center;
     font-family: $headerfont;
+    clear: both;
+  }
+}
+  /*subpages*/
+.biography {
+  p {
+    font-family: $bodyfont;
+    line-height: $line-height *1.1;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+    color: $textcolor;
+
+    @include tablet {
+      line-height: $line-height *1.2;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      padding-left: 40px;
+      padding-right: 40px;
+      font-size: 18px;
+    }
+
+    @include desktop {
+      font-size: 16px;
+      line-height: $line-height;
+
+    }
+
 
   }
+
+
+  h2 {
+    color: $secondcolor;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .biopic {
+    width: 100%;
+
+    @include tablet {
+      width: 80%;
+      margin: auto;
+    }
+
+    @include desktop {
+      float:left;
+      width:  60%;
+    }
+
+  }
+}
+
+.resume {
+  h2 {
+    color: $secondcolor;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+}

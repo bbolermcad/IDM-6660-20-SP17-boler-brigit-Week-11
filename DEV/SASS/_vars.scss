@@ -11,6 +11,9 @@ $headerfont: 'Crushed', cursive;
 $bodyfont:  "Arial", sans-serif;
 
 $maincolor: #25A7DE;
+$secondcolor: #F1CE54;
+
+$textcolor: #333333;
 
 @mixin bigphone {
   @media (min-width: #{$bigphone-width}) {
