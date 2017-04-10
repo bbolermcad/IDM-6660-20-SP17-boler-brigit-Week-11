@@ -13,6 +13,7 @@
 
   position: relative;
 
+
   ul {
 
     background-color: $maincolor;
@@ -25,7 +26,7 @@
     position: absolute;
     top: 0;
     width: 66%;
-
+    z-index: 1;
     a {
 
       display: block;
@@ -143,6 +144,7 @@ h1 {
       margin-left: $line-height * 10;
       margin-bottom: $line-height;
       align: center;
+      z-index: 1;
 
       li {
         background-color: transparent;

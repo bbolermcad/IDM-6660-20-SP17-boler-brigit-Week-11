@@ -43,7 +43,7 @@ a {
     background-position: center;
     min-height: 400px;
     position: relative;
-    z-index: 100;
+    z-index: -10;
 
     @include bigphone {
       min-height: 600px;
@@ -157,12 +157,31 @@ a {
 
   ul {
     margin: 0;
+    padding-top: 20px;
+    display: block;
+    visibility: visible;
+    list-style: square;
+    list-style-type: square;
+
     li {
     visibility: visible;
     font-family: $bodyfont;
     color: $textcolor;
     font-size: 16px;
     display: block;
+    list-style: square;
+  }
+
+  h3 {
+    color: $maincolor;
   }
 }
+
+.resumeimg {
+  width: 100%;
+}
+}
+
+ul li {
+  visibility: visible;
 }

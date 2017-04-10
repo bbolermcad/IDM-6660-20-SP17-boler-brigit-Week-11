@@ -29,7 +29,8 @@
     padding: 1.5rem;
     position: absolute;
     top: 0;
-    width: 66%; }
+    width: 66%;
+    z-index: 1; }
     .slide-left ul a {
       display: block;
       margin-bottom: 1.5rem;
@@ -98,7 +99,8 @@ h1 {
     display: inline-block;
     margin-left: 15rem;
     margin-bottom: 1.5rem;
-    align: center; }
+    align: center;
+    z-index: 1; }
     .slide-left ul li {
       background-color: transparent;
       display: inline-block;
@@ -153,7 +155,7 @@ p {
   background-position: center;
   min-height: 400px;
   position: relative;
-  z-index: 100; }
+  z-index: -10; }
   @media (min-width: 480px) {
     .banner {
       min-height: 600px; } }
@@ -235,12 +237,25 @@ footer p {
   font-size: 2.5rem;
   text-align: center; }
 .resume ul {
-  margin: 0; }
+  margin: 0;
+  padding-top: 20px;
+  display: block;
+  visibility: visible;
+  list-style: square;
+  list-style-type: square; }
   .resume ul li {
     visibility: visible;
     font-family: "Arial", sans-serif;
     color: #333333;
     font-size: 16px;
-    display: block; }
+    display: block;
+    list-style: square; }
+  .resume ul h3 {
+    color: #25A7DE; }
+.resume .resumeimg {
+  width: 100%; }
+
+ul li {
+  visibility: visible; }
 
 /*# sourceMappingURL=css.css.map */
