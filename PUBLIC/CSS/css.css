@@ -193,7 +193,8 @@ footer p {
   min-height: 100px;
   text-align: center;
   font-family: "Crushed", cursive;
-  clear: both; }
+  clear: both;
+  padding-top: 40px; }
 
 /*subpages*/
 .biography p {
@@ -252,7 +253,7 @@ footer p {
     display: block;
     list-style: square; }
   .resume ul h3 {
-    color: #25A7DE; }
+    color: #F1CE54; }
 .resume .resumeimg {
   width: 100%; }
 
@@ -262,5 +263,34 @@ ul li {
 .resumecontent {
   width: 50%;
   margin: auto; }
+
+.contact {
+  line-height: 1.5rem; }
+  .contact h2 {
+    color: #F1CE54;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem; }
+  .contact h3 {
+    color: #F1CE54;
+    margin-top: 1.5rem; }
+  .contact .contactinfo {
+    padding-left: 30px;
+    padding-right: 30px; }
+    @media (min-width: 768px) {
+      .contact .contactinfo {
+        float: right;
+        width: 30%;
+        margin-right: 1.5rem; } }
+    @media (min-width: 1024px) {
+      .contact .contactinfo {
+        float: right;
+        width: 45%;
+        padding-left: 50px;
+        padding-right: 50px; } }
+  @media (min-width: 1024px) {
+    .contact .linkbg {
+      margin-left: 30px; } }
 
 /*# sourceMappingURL=css.css.map */

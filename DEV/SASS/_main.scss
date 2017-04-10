@@ -93,6 +93,7 @@ a {
     text-align: center;
     font-family: $headerfont;
     clear: both;
+    padding-top: 40px;
   }
 }
   /*subpages*/
@@ -173,7 +174,7 @@ a {
   }
 
   h3 {
-    color: $maincolor;
+    color: $secondcolor;
   }
 margin-bottom: $line-height;
 
@@ -191,4 +192,47 @@ ul li {
 .resumecontent {
   width: 50%;
   margin: auto;
+}
+
+.contact {
+  line-height: $line-height;
+
+
+  h2 {
+    color: $secondcolor;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: $line-height;
+    padding-bottom: $line-height;
+  }
+
+  h3 {
+    color: $secondcolor;
+    margin-top: $line-height;
+  }
+
+  .contactinfo {
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @include tablet {
+    float: right;
+    width: 30%;
+    margin-right: $line-height;
+  }
+
+  @include desktop {
+    float: right;
+    width: 45%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.linkbg {
+  @include desktop {
+    margin-left: 30px;
+  }
+}
+
 }
